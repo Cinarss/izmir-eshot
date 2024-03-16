@@ -20,7 +20,7 @@ function searchBus() {
                             .then(data => {
                                 var stopLines = data.split("\n");
                                 var stopList = document.createElement("ul"); // <ul> elementi oluştur
-                                stopList.classList.add("mt-4"); // Bootstrap class ını ekle
+                                stopList.classList.add("mt-4"); // Bootstrap class'ını ekle
                                 for (var j = 1; j < stopLines.length; j++) {
                                     var stopRow = stopLines[j].split(";");
                                     if (stopRow.length >= 5) {
